@@ -43,7 +43,7 @@ envs: List[CDKTargetAWSEnv] = [
         vpc_cidrs="172.16.128.0/24", # vpc cidrs for vpc to add to account
         transit_subnet="28", # subnet mask if contiguous range otherwise use cidr ranges
         contiguous="True", # mark as True if cidr ranges are contiguous
-        org_arn_to_share="arn:aws:organizations::233601607584:organization/o-sm87ee7sqc", # arn of organization to share transit gateway with e.g. "arn:aws:organizations::012345678912:organization/o-sm12ee3sqc"
+        org_arn_to_share="arn:aws:organizations::012345678912:organization/o-sm12ee3sqc", # arn of organization to share transit gateway with e.g. "arn:aws:organizations::012345678912:organization/o-sm12ee3sqc"
         tags=[
             Tag("environment", "network"),
         ]
